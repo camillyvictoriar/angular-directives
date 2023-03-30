@@ -1,0 +1,11 @@
+<div id="itens">
+<div *ngFor="let produtos of produtos" id="img">
+    <div id="person" *ngIf="produtos.estoque > 0">
+    <img src="{{ produtos.imagem }}" width="250px" height="270px" >
+    <p [ngClass]="{ 'promocao' : produtos.promocao}">{{ produtos.descricao }} 
+        <br>
+        A vista: {{ produtos.valor}}</p>
+        
+    </div>
+</div>
+</div>
